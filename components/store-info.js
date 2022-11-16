@@ -1,4 +1,5 @@
 import { Table, Button, Card, Grid, Container, Text } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function StoreInfo() {
   const hours = {
