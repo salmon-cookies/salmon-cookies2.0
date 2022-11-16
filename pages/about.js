@@ -1,67 +1,22 @@
 import * as React from 'react';
-import { createTheme, NextUIProvider } from '@nextui-org/react';
+// import { createTheme, NextUIProvider } from '@nextui-org/react';
 // import { Card, Grid, Row, Text } from "@nextui-org/react";
 import { Card, Grid, Text, Link } from "@nextui-org/react";
 
 
 const AboutUs = () => {
 
-  //   const list = [
-  //     {
-  //       title: "Elaine Huynh",
-  //       img: "./elaine.jpeg",
-  //       bio: "https://github.com/nextui-org/nextui",
-  //     },
-  //     {
-  //       title: "Robert Shepley",
-  //       img: "./robert.jpg",
-  //       bio: ""
-  //     },
-  //     {
-  //       title: "Stephen Martinez",
-  //       img: "./stephen.jpeg",
-  //       bio: ""
-  //     }
-  //   ];
-
-  //   return (
-
-  //     <Grid.Container gap={5} justify="space-between">
-  //       {list.map((item, index) => (
-  //         <Grid xs={6} sm={3} key={index}>
-  //           <Card isPressable>
-  //             <Card.Body css={{ p: 0 }}>
-  //               <img
-  //                 src={item.img}
-  //                 objectFit="cover"
-  //                 width="100%"
-  //                 height={300}
-  //                 alt={item.title}
-  //               />
-  //             </Card.Body>
-  //             <Card.Footer css={{ justifyItems: "flex-start" }}>
-  //               <Row wrap="wrap" justify="space-between" align="center">
-  //                 <Text b>{item.title}</Text>
-  //                 <Text css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
-  //                   {item.bio}
-  //                 </Text>
-  //               </Row>
-  //             </Card.Footer>
-
-  //           </Card>
-  //         </Grid>
-  //       ))}
-  //     </Grid.Container>
-  //   );
   return (
-    <Grid.Container css={{ p: "$6", m: "$2", gap: "20px"  }}>
-      <Card isHoverable variant="bordered" css={{ p: "$6", mw: "550px", m: "$0"}}>
+    <Grid.Container css={{ p: "$6", m: "$2", gap: "20px" }}>
+      <Card isHoverable variant="bordered" css={{ p: "$6", mw: "550px", m: "$0" }}>
         <Card.Header>
           <img
             alt="elaine photo"
             src="./elaine.jpeg"
-            width="300px"
+            width="200px"
             height="300px"
+            style={{ borderRadius: '10px' }}
+
           />
           <Grid.Container css={{ pl: "$6" }}>
             <Grid xs={12}>
@@ -95,9 +50,9 @@ const AboutUs = () => {
 
           </Grid.Container>
         </Card.Header>
-        <Card.Body css={{ py: "$2" }}>
+        <Card.Body css={{ borderRadius: '$xs', backgroundColor: "#FFC4EE", py: "$2" }}>
           <Text>
-            Make beautiful websites regardless of your design experience.
+            I am an aspiring software developer with experience and education in audio engineering and music production. My experience has provided me with the opportunity to work as a lead technician and manager of production teams in various environments. Having worked closely with digital audio workstations such as Pro Tools and Ableton Live, I am fascinated by the intersection between complex tasks, data, and the user experience
           </Text>
         </Card.Body>
         <Card.Footer>
@@ -113,6 +68,8 @@ const AboutUs = () => {
             src="./robert.jpg"
             width="200px"
             height="300px"
+            style={{ borderRadius: '10px' }}
+
           />
           <Grid.Container css={{ pl: "$6" }}>
             <Grid xs={12}>
@@ -146,9 +103,9 @@ const AboutUs = () => {
 
           </Grid.Container>
         </Card.Header>
-        <Card.Body css={{ py: "$2" }}>
+        <Card.Body css={{ borderRadius: '$xs', backgroundColor: "#FFC4EE", py: "$2" }}>
           <Text>
-          I am an aspiring software developer with experience and education in audio engineering and music production. My experience has provided me with the opportunity to work as a lead technician and manager of production teams in various environments. Having worked closely with digital audio workstations such as Pro Tools and Ableton Live, I am fascinated by the intersection between complex tasks, data, and the user experience
+            I am an aspiring software developer with experience and education in audio engineering and music production. My experience has provided me with the opportunity to work as a lead technician and manager of production teams in various environments. Having worked closely with digital audio workstations such as Pro Tools and Ableton Live, I am fascinated by the intersection between complex tasks, data, and the user experience
           </Text>
         </Card.Body>
       </Card>
@@ -160,6 +117,7 @@ const AboutUs = () => {
             src="./stephen.jpeg"
             width="200px"
             height="300px"
+            style={{ borderRadius: '10px' }}
           />
           <Grid.Container css={{ pl: "$6" }}>
             <Grid xs={12}>
@@ -193,9 +151,9 @@ const AboutUs = () => {
 
           </Grid.Container>
         </Card.Header>
-        <Card.Body css={{ py: "$2" }}>
+        <Card.Body css={{ borderRadius: '$xs', backgroundColor: "#FFC4EE", py: "$2" }}>
           <Text>
-           I am a Software Developer looking forward to a rewarding Career my new field. I am hard working and motivated, my work ethic and drive will accelerate me toward my goals. Currently enrolled at Code Fellows.
+            I am a Software Developer looking forward to a rewarding Career my new field. I am hard working and motivated, my work ethic and drive will accelerate me toward my goals. Currently enrolled at Code Fellows.
           </Text>
         </Card.Body>
       </Card>
