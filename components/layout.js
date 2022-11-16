@@ -11,7 +11,7 @@ export default function Layout({children}){
         </Navbar.Brand>
         <Navbar.Content hideIn="xs">
           <Navbar.Link href="/">HOME</Navbar.Link>
-          <Navbar.Link isActive href="/sales">SALES</Navbar.Link>
+          <Navbar.Link href="/sales">SALES</Navbar.Link>
           <Navbar.Link href="/about">ABOUT</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
@@ -22,9 +22,6 @@ export default function Layout({children}){
           </Navbar.Item>
         </Navbar.Content>
       </Navbar>
-      <img 
-        src='./cookie-logo.png'
-      />
       <section>
         {children}
       </section>
