@@ -2,6 +2,7 @@ import * as React from 'react';
 // import { createTheme, NextUIProvider } from '@nextui-org/react';
 // import { Card, Grid, Row, Text } from "@nextui-org/react";
 import { Card, Grid, Text, Link } from "@nextui-org/react";
+import Image from 'next/image';
 
 
 const AboutUs = () => {
@@ -10,11 +11,11 @@ const AboutUs = () => {
     <Grid.Container css={{ p: "$6", m: "$2", gap: "20px" }}>
       <Card isHoverable variant="bordered" css={{ p: "$6", mw: "550px", m: "$0" }}>
         <Card.Header>
-          <img
+          <Image
             alt="elaine photo"
-            src="./elaine.JPEG"
-            width="200px"
-            height="300px"
+            src="/elaine.JPEG"
+            width="200"
+            height="300"
             style={{ borderRadius: '10px' }}
 
           />
@@ -63,11 +64,11 @@ const AboutUs = () => {
       <Card isHoverable variant="bordered" css={{ p: "$6", mw: "550px" }}>
         <Card.Header>
 
-          <img
+          <Image
             alt="robert photo"
-            src="./robert.jpg"
-            width="200px"
-            height="300px"
+            src="/robert.jpg"
+            width="200"
+            height="300"
             style={{ borderRadius: '10px' }}
 
           />
@@ -112,11 +113,11 @@ const AboutUs = () => {
 
       <Card isHoverable variant="bordered" css={{ p: "$6", mw: "550px" }}>
         <Card.Header>
-          <img
+          <Image
             alt="stephen photo"
-            src="./stephen.jpeg"
-            width="200px"
-            height="300px"
+            src="/stephen.jpeg"
+            width="200"
+            height="300"
             style={{ borderRadius: '10px' }}
           />
           <Grid.Container css={{ pl: "$6" }}>
