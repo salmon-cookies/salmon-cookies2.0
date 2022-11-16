@@ -1,3 +1,3 @@
-export default function Table() {
+export default function AboutPage() {
   return <div>About page</div>;
 }
