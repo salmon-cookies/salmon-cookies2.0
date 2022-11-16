@@ -1,13 +1,13 @@
-import "../styles/globals.css";
-import { ThemeProvider } from "@mui/material";
-import { theme } from "../utils/theme";
+import * as React from 'react';
 
-function MyApp({ Component, pageProps }) {
- return (
-   <ThemeProvider theme={theme}>
-     <Component {...pageProps} />
-   </ThemeProvider>
- );
+// 1. import `NextUIProvider` component
+import { NextUIProvider } from '@nextui-org/react';
+
+export default function App({ Component, pageProps }) {
+  // 2. Use at the root of your app
+  return (
+    <NextUIProvider>
+      <Component { ...pageProps } />
+    </NextUIProvider>
+  );
 }
-
-export default MyApp;

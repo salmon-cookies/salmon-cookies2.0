@@ -1,12 +1,6 @@
 .container {
   padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #fefefe;
- }
+}
 
 .main {
   min-height: 100vh;
