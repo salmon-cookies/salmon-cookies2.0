@@ -1,9 +1,8 @@
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
-import { Navbar, Button, Container, Link, Text, Grid } from "@nextui-org/react";
+import { Navbar, Button, Container, Link, Text, Grid } from '@nextui-org/react';
 
 const Stars = () => (
   <ul style={{ display: 'flex', flexDirection: 'row', listStyle: 'none', marginLeft: 'auto' }}>
@@ -12,19 +11,16 @@ const Stars = () => (
     <li><Image src='/star.png' alt='star' height='15' width='15' /></li>
     <li><Image src='/star.png' alt='star' height='15' width='15' /></li>
     <li><Image src='/star.png' alt='star' height='15' width='15' /></li>
-  </ul>
-)
+ </ul>
+);
 
 export default function Home() {
-
   return (
     <div className={styles.container}>
-      {/* <Head>
+      <Head>
         <title>Home App</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet" />
-      </Head> */}
+
+      </Head>
       <section>
         <header style={{ height: '50vh', backgroundColor: '#FFC2EE' }}>
           <div style={{ position: 'relative' }}>
@@ -33,8 +29,8 @@ export default function Home() {
               src='/cookie-logo.png'
               height='500'
               width='500'
-            />
-            </div>
+            /> 
+                </div>
           </div>
         </header>
         <Grid.Container style={{ marginTop: '60px' }} gap={2} justify='center'>
@@ -68,8 +64,20 @@ export default function Home() {
           </Grid>
         </Grid.Container>
         <article style={{ width: '50vw', margin: 'auto', paddingTop: '60px' }}>
-          <Text h3 css={{ fontFamily: 'Roboto Slab', textAlign: 'center' }} >Lorem ipsum dolor sit amet</Text>
-          <Text h6 css={{ fontFamily: 'Roboto Slab', fontWeight: '100', textAlign: 'center' }} >consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
+          <Text h3 css={{ fontFamily: 'Roboto Slab', textAlign: 'center' }}>
+            Lorem ipsum dolor sit amet
+          </Text>
+          <Text
+            h6
+            css={{
+              fontFamily: 'Roboto Slab',
+              fontWeight: '100',
+              textAlign: 'center',
+            }}
+          >
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam
+          </Text>
         </article>
         <Grid.Container style={{ marginTop: '60px' }} gap={2} justify='center'>
           <Grid sx={4}>
