@@ -26,7 +26,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet" />
       </Head>
       <section>
-        <header style={{ background: '#FFC2EE', height: '50vh' }}>
+        <header style={{ height: '50vh', backgroundColor: '#FFC2EE'}}>
           <div style={{ position: 'relative' }}>
             <div style={{ position: 'absolute', left: '50%', transform: 'translate(-50%, -10%)' }}>
               <img
@@ -94,23 +94,34 @@ export default function Home() {
             <Stars />
           </Grid>
         </Grid.Container>
-      </section>
-      {/* <section>
-        <Grid.Container gap={10} justify='center'>
-          <Grid sx={6} >
-            <div style={{backgroundColor: '#FFC2EE'}}>
+        <Grid.Container gap={2} justify='center' >
+          <Grid sx={6} css={{ margin: 'auto'}} >
+            <div >
               <img 
                 src="./map.png"
+                style={{ height: '30rem', width: '30rem'}}
               />
             </div>
           </Grid>
-          <Grid sx={6} >
-            <article style={{ width: '30%'}}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
+          <Grid sx={6} style={{ width: '400px', margin: 'auto'}}>
+              <Text h3>Lorem ipsum dolor sit amet,</Text>
+              <Text h6>Lorem ipsum dolor sit amet,
+               consectetur adipiscing elit, sed do eiusmod 
+               tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur. Excepteur sint 
+                occaecat cupidatat non proident, sunt in culpa 
+                qui officia deserunt mollit anim id est laborum.</Text>
+                <Button size='lg' css={{ backgroundColor: '$primaryLightHover', color: '$text'}}>
+                  <Link css={{ color: '$background'}} href='/sales'>Order Now!</Link>
+                </Button>
           </Grid>
         </Grid.Container>
-      </section> */}
+      </section>
+
     </div>
   );
 }

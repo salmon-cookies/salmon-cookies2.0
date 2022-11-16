@@ -10,7 +10,7 @@ export default function SCNavbar() {
   const { pathname } = useRouter();
 
   return (
-    <Navbar isBordered>
+    <Navbar isBordered >
       <Navbar.Brand>
         <Text b color='inherit' hideIn='xs'>
           SALMON COOKIES
@@ -31,7 +31,7 @@ export default function SCNavbar() {
       </Navbar.Content>
       <Navbar.Content>
         <Navbar.Item>
-          <Button auto flat>
+          <Button auto flat css={{ color: '$text', backgroundColor: '$primaryLightHover'}}>
             Order Now
           </Button>
         </Navbar.Item>

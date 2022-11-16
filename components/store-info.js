@@ -1,4 +1,4 @@
-import { Table, Button, Card, Grid, Container } from '@nextui-org/react';
+import { Table, Button, Card, Grid, Container, Text } from '@nextui-org/react';
 import { useEffect, useState } from 'react';
 import { faker } from '@faker-js/faker';
 
@@ -74,6 +74,22 @@ export default function StoreInfo() {
 
   return (
     <>
+      <section>
+        <header style={{ height: '50vh', backgroundColor: '#FFC2EE' }}>
+          <div style={{ position: 'relative' }}>
+            <div style={{ position: 'absolute', left: '50%', transform: 'translate(-50%, -10%)' }}>
+              <img
+                src='./cookie-logo.png'
+                style={{ height: '30rem', width: '30rem' }}
+              />
+            </div>
+          </div>
+        </header>
+      </section>
+      <article style={{ width: '50vw', margin: 'auto', paddingTop: '60px' }}>
+        <Text h3 css={{ textAlign: 'center' }} >Lorem ipsum dolor sit amet</Text>
+        <Text h6 css={{ fontFamily: 'Roboto Slab', fontWeight: '100', textAlign: 'center' }} >consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
+      </article>
       {/* <Container>
         <Button.Group bordered>
           {Object.keys(stores).map((store, index) => {
@@ -118,7 +134,7 @@ export default function StoreInfo() {
                     <Table.Cell key={`${store}-${hour}`}>
                       {Math.round(
                         hours[hour].cookieMultiplier *
-                          stores[store].avgCookiesPerHour
+                        stores[store].avgCookiesPerHour
                       )}
                     </Table.Cell>
                   );

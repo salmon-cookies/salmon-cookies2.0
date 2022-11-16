@@ -8,6 +8,10 @@
 
 - Assume, for this assignment, that your employer has asked your team to do a proof of concept of a javascript framework, to assess it’s viability as a replacement for their legacy system. Your task will be to complete a full analysis report and give a presentation to the class as to your findings.
 
+## Start instructions
+
+- npm i react next faker @nextui-org/react
+
 ## Framework Links
 
 - [Next.js](https://nextjs.org/)
