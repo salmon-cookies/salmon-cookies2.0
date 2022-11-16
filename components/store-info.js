@@ -3,53 +3,53 @@ import { useEffect, useState } from 'react';
 import { faker } from '@faker-js/faker';
 
 export default function StoreInfo() {
-  const hours = [
-    {
+  const hours = {
+    9: {
       key: 9,
       label: '9AM',
       cookieMultiplier: 20,
     },
-    {
+    10: {
       key: 10,
       label: '10AM',
       cookieMultiplier: 12.8,
     },
-    {
+    11: {
       key: 11,
       label: '11AM',
       cookieMultiplier: 2.5,
     },
-    {
+    12: {
       key: 12,
       label: '12PM',
       cookieMultiplier: 9,
     },
-    {
+    13: {
       key: 13,
       label: '1PM',
       cookieMultiplier: 18,
     },
-    {
+    14: {
       key: 14,
       label: '2PM',
       cookieMultiplier: 1.8,
     },
-    {
+    15: {
       key: 15,
       label: '3PM',
       cookieMultiplier: 6.2,
     },
-    {
+    16: {
       key: 16,
       label: '4PM',
       cookieMultiplier: 7,
     },
-    {
+    17: {
       key: 17,
       label: '5PM',
       cookieMultiplier: 7.3,
     },
-  ];
+  };
 
   const stores = {
     seattle: {
@@ -70,11 +70,11 @@ export default function StoreInfo() {
     },
   };
 
-  const [activeStore, setActiveStore] = useState('seattle');
+  // const [activeStore, setActiveStore] = useState('seattle');
 
   return (
     <>
-      <Container>
+      {/* <Container>
         <Button.Group bordered>
           {Object.keys(stores).map((store, index) => {
             return (
@@ -84,8 +84,8 @@ export default function StoreInfo() {
             );
           })}
         </Button.Group>
-      </Container>
-      <Grid.Container gap={2} justify='center'>
+      </Container> */}
+      {/* <Grid.Container gap={2} justify='center'>
         {hours.map((hour) => (
           <Grid key={hour.key}>
             <Card css={{ mw: '400px' }}>
@@ -96,7 +96,38 @@ export default function StoreInfo() {
             </Card>
           </Grid>
         ))}
-      </Grid.Container>
+      </Grid.Container> */}
+      <Table>
+        <Table.Header>
+          <Table.Column>LOCATION</Table.Column>
+          {Object.keys(hours).map((hour) => {
+            return (
+              <Table.Column key={hours[hour].key}>
+                {hours[hour].label}
+              </Table.Column>
+            );
+          })}
+        </Table.Header>
+        <Table.Body>
+          {Object.keys(stores).map((store) => {
+            return (
+              <Table.Row key={store}>
+                <Table.Cell>{stores[store].name}</Table.Cell>
+                {Object.keys(hours).map((hour) => {
+                  return (
+                    <Table.Cell key={`${store}-${hour}`}>
+                      {Math.round(
+                        hours[hour].cookieMultiplier *
+                          stores[store].avgCookiesPerHour
+                      )}
+                    </Table.Cell>
+                  );
+                })}
+              </Table.Row>
+            );
+          })}
+        </Table.Body>
+      </Table>
     </>
   );
 }
