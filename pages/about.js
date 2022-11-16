@@ -12,7 +12,7 @@ const AboutUs = () => {
         <Card.Header>
           <img
             alt="elaine photo"
-            src="./elaine.jpeg"
+            src="./elaine.JPEG"
             width="200px"
             height="300px"
             style={{ borderRadius: '10px' }}
@@ -52,7 +52,7 @@ const AboutUs = () => {
         </Card.Header>
         <Card.Body css={{ borderRadius: '$xs', backgroundColor: "#FFC4EE", py: "$2" }}>
           <Text>
-            I am an aspiring software developer with experience and education in audio engineering and music production. My experience has provided me with the opportunity to work as a lead technician and manager of production teams in various environments. Having worked closely with digital audio workstations such as Pro Tools and Ableton Live, I am fascinated by the intersection between complex tasks, data, and the user experience
+            Hello! I'm Elaine, a full-stack software engineer with a background in Healthcare. My values in building and being creative as well as my need to work in a team setting are all found in this profession. I see myself thriving in this field and making meaningful connections with future teammates as I continue to expand on my impact as an engineer and team member. My appreciation for engineering comes from being able to create products people find useful. As a highly driven individual, I envision myself taking on impactful projects, and future mentorship roles, as well as empowering other women in tech and career changers wanting to break into the field as well! 
           </Text>
         </Card.Body>
         <Card.Footer>
