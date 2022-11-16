@@ -1,3 +1,3 @@
 export default function Table() {
-  return <div>Table page</div>
+  return <div>About page</div>;
 }
