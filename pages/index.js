@@ -1,34 +1,52 @@
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
-import { Navbar, Button, Container, Link, Text, Grid } from "@nextui-org/react";
+import { Navbar, Button, Container, Link, Text, Grid } from '@nextui-org/react';
 
 const Stars = () => (
-  <ul style={{ display: 'flex', flexDirection: 'row', listStyle: 'none', marginLeft: 'auto' }}>
-    <li><img src='./star.png' style={{ height: '1rem', width: '1rem' }} /></li>
-    <li><img src='./star.png' style={{ height: '1rem', width: '1rem' }} /></li>
-    <li><img src='./star.png' style={{ height: '1rem', width: '1rem' }} /></li>
-    <li><img src='./star.png' style={{ height: '1rem', width: '1rem' }} /></li>
-    <li><img src='./star.png' style={{ height: '1rem', width: '1rem' }} /></li>
+  <ul
+    style={{
+      display: 'flex',
+      flexDirection: 'row',
+      listStyle: 'none',
+      marginLeft: 'auto',
+    }}
+  >
+    <li>
+      <img src='./star.png' style={{ height: '1rem', width: '1rem' }} />
+    </li>
+    <li>
+      <img src='./star.png' style={{ height: '1rem', width: '1rem' }} />
+    </li>
+    <li>
+      <img src='./star.png' style={{ height: '1rem', width: '1rem' }} />
+    </li>
+    <li>
+      <img src='./star.png' style={{ height: '1rem', width: '1rem' }} />
+    </li>
+    <li>
+      <img src='./star.png' style={{ height: '1rem', width: '1rem' }} />
+    </li>
   </ul>
-)
+);
 
 export default function Home() {
-
   return (
     <div className={styles.container}>
       <Head>
         <title>Home App</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet" />
       </Head>
       <section>
         <header style={{ background: '#FFC2EE', height: '50vh' }}>
           <div style={{ position: 'relative' }}>
-            <div style={{ position: 'absolute', left: '50%', transform: 'translate(-50%, -10%)' }}>
+            <div
+              style={{
+                position: 'absolute',
+                left: '50%',
+                transform: 'translate(-50%, -10%)',
+              }}
+            >
               <img
                 src='./cookie-logo.png'
                 style={{ height: '30rem', width: '30rem' }}
@@ -63,8 +81,20 @@ export default function Home() {
           </Grid>
         </Grid.Container>
         <article style={{ width: '50vw', margin: 'auto', paddingTop: '60px' }}>
-          <Text h3 css={{ fontFamily: 'Roboto Slab', textAlign: 'center' }} >Lorem ipsum dolor sit amet</Text>
-          <Text h6 css={{ fontFamily: 'Roboto Slab', fontWeight: '100', textAlign: 'center' }} >consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</Text>
+          <Text h3 css={{ fontFamily: 'Roboto Slab', textAlign: 'center' }}>
+            Lorem ipsum dolor sit amet
+          </Text>
+          <Text
+            h6
+            css={{
+              fontFamily: 'Roboto Slab',
+              fontWeight: '100',
+              textAlign: 'center',
+            }}
+          >
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam
+          </Text>
         </article>
         <Grid.Container style={{ marginTop: '60px' }} gap={2} justify='center'>
           <Grid sx={4}>
