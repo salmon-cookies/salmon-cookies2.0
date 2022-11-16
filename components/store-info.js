@@ -83,7 +83,7 @@ export default function StoreInfo() {
             >
               <Image
                 alt="Cookie logo"
-                src="./cookie-logo.png"
+                src="/cookie-logo.png"
                 width="500px"
                 height="500px"
               />
